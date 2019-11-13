@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Les Surfeuses Lilloises</title>
+	<meta charset="utf-8">
+
+	<!-- font -->
+
+	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+
+
+	<!-- css -->
+
+	<link rel="stylesheet" href="indexhtml/css/bootstrap.min.css">
+	<link rel="stylesheet" href="indexhtml/css/style.css">
+
+<style>
+
+/* font-family: 'Cabin', sans-serif; */
+/* rose claire : #D9AFA0 */
+/* rose claire blanc : #F2DBD5 ; */
+/* violet foncé : #59433E; */
+/* vidéo https://www.youtube.com/watch?v=vSeW6_0SMsk 27:40 */
+
+
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+body, html {
+	font-family: 'Cabin', sans-serif;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.btn-custom {
+	background-color: #F2DBD5;
+	color: #ffffff; 
+}
+
+.separator {
+	height: 3px;
+	width: 5%;
+	border: none;
+	box-shadow: none; 
+	background-color: #D9AFA0;
+	text-align: center
+}
+
+/* header */
+
+.header {
+	background-color: #D9AFA0;
+	height: 70px;
+	line-height: 70px;
+}
+
+.logo {
+	color: #F2DBD5;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+	float: left;
+}
+
+.menu {
+	float: right;
+}
+
+.menu a {
+	color:#F2DBD5;
+	margin-right: 20px;
+
+}
+.menu a:hover {
+	color:#59433E;
+}
+
+/* bannière */
+.banner {
+	width: 100%;
+	max-width: 100%;
+}
+
+.ban {
+	width: 100%;
+	max-width: 100%;
+	position: relative;;
+}
+
+.ban img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.inner-banner {
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	width: 100%
+}
+
+.inner-banner h1 {
+	color: #ffffff;
+	text-shadow: 1px 1px 20px #000000; 
+}
+
+.inner-banner .btn-custom {
+	background-color: #F2DBD5;
+	color: #ffffff; 
+}
+
+.inner-banner .btn-custom:hover {
+	background-color: #59433E;
+
+}
+
+/* about */
+#about {
+	text-align: center;
+	padding-top: 10%;
+}
+
+.about article {
+	text-align: center;
+	margin-bottom: 10%;
+	margin-top: 10%;
+
+}
+
+.about article h2 {
+	text-align: center;
+}
+
+/* portfolio */
+#portfolio {
+	text-align: center;
+}
+.wrap {
+       overflow: hidden;
+       margin: 10px;
+    }
+
+.box {
+       float: left;
+       position: relative;
+       width: 20%;
+       padding-bottom: 20%;
+    }
+.boxInner {
+       position: absolute;
+       left: 10px;
+       right: 10px;
+       top: 10px;
+       bottom: 10px;
+       overflow: hidden;
+    }
+
+.boxInner img {
+       width: 100%;
+    }
+
+.boxInner .titleBox {
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       margin-bottom: -50px;
+       background: #000;
+       background: rgba(0, 0, 0, 0.5);
+       color: #FFF;
+       padding: 10px;
+       text-align: center;
+       -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+       transition: all 0.3s ease-out;
+    }
+   
+body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
+       margin-bottom: 0;
+    }
+    
+.selectableImageContainer {
+    border: 1px solid #CCC;
+    padding: 5px;
+    margin: 7px;
+    float: left;
+    width: 212px;
+    text-align: center;
+}
+
+.zoom_toolbar_button {
+    height: 32px;
+    width: 32px;
+    float: right;
+    border-radius: 4px;
+    margin-left: 2px;
+    margin-top: 8px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    padding: 6px 0 0 3px;
+}
+
+.approved_image_toolbar_button {
+    background-color: #8bc249;
+    height: 32px;
+    width: 32px;
+    float: right;
+    border-radius: 4px;
+    margin-left: 2px;
+    margin-top: 8px;
+    cursor: pointer;
+    padding: 6px 0 0 3px;
+}
+
+.disapproved_image_toolbar_button {
+    background-color: #bb232a;
+    height: 32px;
+    width: 32px;
+    float: right;
+    border-radius: 4px;
+    margin-left: 2px;
+    margin-top: 8px;
+    cursor: pointer;
+    padding: 6px 0 0 1px;
+}
+
+.reviewIssuesButton {
+    margin-left: 20px;
+    color: #ffffff;
+    background-color: #00aeef;
+}
+
+.markAllReviewed {
+    background-color: #00aeef;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.white {
+    color: #ffffff;
+}
+
+
+/* contact */
+.footer {
+	background-color: #59433E;
+	height: 6 00px;
+
+}
+
+.footer p {
+	color: #ffffff;
+	text-align: center; 
+	padding-top: 5%;
+
+}
+
+#contact {
+	text-align: center;
+	color: #ffffff;
+	margin-bottom: 40px;
+
+}
+
+.span6 {
+	width: 500px;
+	display: block;
+	margin: 0 auto; 
+}
+
+.formulaireContact {
+	width: 500px;
+	display: block;
+	margin: 0 auto; 
+}
+
+input {
+	margin-bottom: 20px;
+
+}
+
+input[type=text] {
+	height: 50px;
+	width: 500px;
+	border: none;
+}
+
+input[type=email] {
+	height: 50px;
+	width: 500px;
+	border: none;	
+} 
+
+textarea {
+	width: 500px;
+	height: 200px;
+	resize: vertical;
+}
+
+/* Responsive Background */
+
+@media (max-width:770px) {
+
+body {
+   float:none;
+   width:100%;}
+
+
+.header {
+  background-color: #D9AFA0;
+  height: 70px;
+  line-height: 70px;
+  width: 80%%;
+}
+
+.menu {
+  font-size: 8px;
+  margin-right: 20px;
+}
+
+.menu a:hover {
+  color:#59433E;
+}
+
+</style>
+
+</head>
+<body>	
+
+	<!-- header --> 
+		<header class="container-fluid header">
+			<div class="container">
+				<a href="index.html" class="logo"> Les Surfeurses Lilloises </a>
+				<nav class="menu">
+					<a href="#"> Accueil </a>
+					<a href="californie.html"> Californie </a>
+					<a href="bretagne.html"> Bretagne </a>
+					<a href="#contact"> Contact </a>
+					
+				 </nav>
+
+			</div>
+			 
+		</header>
+	<!-- end header --> 
+
+	<!-- bannière -->
+	<div>
+		<section class="container-fluid banner">
+			<div class="ban">
+				<img src="indexhtml/Images/bannerexp.jpg" alt="bannière du site">
+			</div>
+			<div class="inner-banner">
+				<h1>Viens surfer au bout du monde avec Héloise et Elise !</h1>
+				<a href="#contact"> <button class="btn btn-custom">Contactez-nous !</button> </a>
+			</div>
+		</section>
+	</div>
+	<!-- end bannière -->
+
+	<!-- à propos -->
+<div>
+	<h2 id="about"> Ce qu'il y a savoir </h2>
+	<hr class="separator">
+</div>
+
+<div>
+	<section class="container-fluid about">
+		 <div class="container">
+		 	<div class="row">
+		 		<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+		 			 <h2> Héloise Godard </h2>
+		 			 <p> 
+		 			 Je m’appelle Héloïse, j’ai 21 ans. Originaire de la banlieue parisienne, j’ai fait le choix de partir m’installer sur la côte atlantique. Je suis passionnée de surf depuis mon plus jeune âge. Je vis désormais à Biarritz, c’était une véritable angoisse pour moi d’être loin de l’océan et de compter chaque fois les jours qu’ils me restaient afin de pouvoir toucher à ma planche. Grâce à mon métier j’ai du temps libre et des vacances pour voyager à la quête de vagues parfaites et isolées si possible. Voyager et découvrir de nouveaux endroits, c’est ce que j’aime faire. Mon prochain voyage est Bali, je vais enfin pouvoir découvrir les plus belles plages d’Indonésie !
+		 			 </p>
+		 		</article>
+		 		<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+		 			 <h2> Elise Casanova </h2>
+		 			 <p> 
+		 			Mon nom est Elise Casanova, étudiante en 4ème année de l’EDHEC en digitale. J’ai commencé le surf un peu tard comparé à mes amis/collègues. J’avais 14 ans et je suis devenue complètement amoureuse de cette culture et de tout ce qu’elle comprend. Avec le temps, j’ai commencé à m’intéresser à l’aspect nature de ce sport… L’océan fait partie de quelque chose de bien plus grand que notre petit monde égocentrique. Je suis aussi très reconnaissante du fait que le surf m’a offert la possibilité d’être en contact avec des gens que je n’aurais jamais pu rencontrer autrement. 
+		 			 </p>
+		 		</article> 
+		 		<article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+		 			 <h2> Notre Blog </h2>
+		 			 <p> 
+		 			Après cinq mois passés aux USA à profiter du soleil et des belles vagues nous voici rentrée en France, la tête pleine de beaux souvenirs et de projets. L’air est frais, l’eau glaciale mais malgré tout on se sent bien chez soi. C’est toujours étrange de rentrer de voyage, on se sent différent mais rien n’a changé. Il faut se réhabituer à son quotidien, refaire sa place. Heureusement il y a les photos pour se rappeler que tout ce qu’on a vécu a bien existé, que ce n’était pas un rêve. Voici en quelques images et quelques articles de ce voyage au pays du surf.
+		 			 </p>
+		 		</article>
+		 	</div>
+		 </div>
+	</section>
+</div>
+	<!-- end à propos  -->
+
+	<!-- portfolio -->
+
+	<section class="container-fluid portfolio">
+		<div class="container ">
+			<h2 id="portfolio"> Articles </h2> 
+			<hr class="separator">
+			<body class="no-touch"> 
+		</div>
+	</section>
+  
+  <div class="wrap">
+    
+    <!-- Photo Gallery -->
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/competition.jpg" />
+        <div class="titleBox">Compétition</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/falaise.jpg" />
+        <div class="titleBox">Bretagne</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/mermontagne.jpg" />
+        <div class="titleBox">Ski & Snowboard </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/noirblanc.jpg" />
+        <div class="titleBox">My Board</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/surf1.jpg" />
+        <div class="titleBox">Voyages</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/surf2.jpg" />
+        <div class="titleBox">Californie</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/surf3.jpg" />
+        <div class="titleBox">Mexique</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/surfboard.jpg" />
+        <div class="titleBox">Hossegor</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/wetsuit.jpeg" />
+        <div class="titleBox">Wetsuit</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/fille rivage.jpg" />
+        <div class="titleBox">Portugal</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/palmes.jpg" />
+        <div class="titleBox">Vacances</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="boxInner">
+        <img src="indexhtml/Images/cheveux fille.jpg" />
+        <div class="titleBox">Cheveux</div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- Photo Gallery -->
+	
+	<!-- end portfolio -->
+
+	<!-- footer contact -->
+
+	<footer class="container-fluid footer" >
+		<h2 id="contact"> Contactez-nous ! </h2>
+
+		<div class="container">
+			<div class="row">
+					<div class="span6">
+
+			            <form class="formulaireContact">
+			                
+			                <div class="controls controls-row">
+			                    <input id="name" name="name" type="text" class="span3" placeholder="Name"> 
+			                    <input id="email" name="email" type="email" class="span3" placeholder="Email address">
+			                </div>
+			                <div class="controls">
+			                    <textarea id="message" name="message" class="span6" placeholder="Your Message" rows="5"></textarea>
+			                </div>
+			                  
+			                <div class="controls">
+			                    <button id="contact-submit" type="submit" class="btn btn-custom input-medium pull-right">Send</button>
+			             	</div>
+			            
+			            </form>
+
+			        </div>
+				</div>
+			<p>
+				Copyright (c) 2019 Copyright Holder All Rights Reserved. 
+			</p>
+		</div> 
+	</footer>
+
+</body>
+
+</html>
